@@ -8,7 +8,7 @@ namespace CI_CD.Controllers
     {
         private static readonly string[] Summaries =
         [
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching","Rajesh"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching","Rajesh","Praneesh"
         ];
 
         [HttpGet(Name = "GetWeatherForecast")]
