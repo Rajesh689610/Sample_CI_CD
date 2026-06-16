@@ -3,7 +3,7 @@ name: Deploy API
 on:
   push:
     branches:
-      - main
+      - int
 
 jobs:
   deploy:
@@ -27,9 +27,9 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o Publish
 
-    - name: Copy Files to IIS
+    - name: Copy Files to int
       run: |
-        xcopy Publish\* D:\Projects\Publish /E /Y
+        xcopy Publish\* D:\Projects\INT /E /Y
 
     - name: Restart IIS
       run: iisreset
